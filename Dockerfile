@@ -9,3 +9,4 @@ RUN apk update \
     
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer
 RUN sed -i 's/Listen 80/Listen 5000/g' /etc/apache2/httpd.conf
+EXPOSE 5000
